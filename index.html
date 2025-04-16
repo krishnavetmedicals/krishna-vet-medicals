@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Krishna Vet Medicals</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Krishna Vet Medicals</h1>
+        </header>
+
+        <div class="main-content">
+            <aside class="sidebar">
+                <div class="sidebar-header">
+                    <h3>Menu</h3>
+                </div>
+                <ul class="sidebar-menu">
+                    <li class="active" data-tab="total-products"><i class="fas fa-boxes"></i> Total Products</li>
+                    <li data-tab="sample-products"><i class="fas fa-vial"></i> Sample Products</li>
+                    <li data-tab="short-expiry"><i class="fas fa-clock"></i> Short Expiry List</li>
+                    <li><a href="add-prices.html"><i class="fas fa-plus-circle"></i> Add Prices</a></li>
+                </ul>
+                <div class="sidebar-footer">
+                    <p>Total Products: <span id="total-count">0</span></p>
+                </div>
+            </aside>
+
+            <main class="content">
+                <div class="tab-content active" id="total-products">
+                    <h2>Total Products</h2>
+                    <div class="search-bar">
+                        <input type="text" id="search-input" placeholder="Search products...">
+                        <button id="search-btn"><i class="fas fa-search"></i></button>
+                    </div>
+                    <div class="product-list" id="product-list">
+                        <!-- Products will be loaded here -->
+                    </div>
+                </div>
+
+                <div class="tab-content" id="sample-products">
+                    <h2>Sample Products</h2>
+                    <div class="product-list" id="sample-list">
+                        <!-- Sample products will be loaded here -->
+                    </div>
+                </div>
+
+                <div class="tab-content" id="short-expiry">
+                    <h2>Short Expiry Products</h2>
+                    <div class="product-list" id="expiry-list">
+                        <!-- Expiry products will be loaded here -->
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
